@@ -5,7 +5,7 @@ WORKDIR /var/www/html
 RUN a2enmod rewrite
 
 # Linux Library
-RUN apt-get update && apt-get install -y --no-install-recommends apt-utils \
+RUN apt-get update -y && apt-get install -y \
     libicu-dev \
     libmariadb-dev \
     unzip zip \
