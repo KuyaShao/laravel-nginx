@@ -9,8 +9,8 @@ ADD ./frontend/react-app .
 
 
 RUN npm i -g vite
-RUN npm install
-RUN npm update
+RUN npm install --include=dev
+
 
 ENTRYPOINT ["/entrypoint.sh"]
 
