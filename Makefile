@@ -11,6 +11,9 @@ up:
 
 composer-update:
 	docker exec backend-laravel bash -c "composer update"
+
+npm-install:
+	docker exec frontend-react bash -c "npm i"
 data:
 	docker exec backend-laravel bash -c "php artisan migrate"
 	docker exec backend-laravel bash -c "php artisan db:seed"
