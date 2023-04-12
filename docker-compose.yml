@@ -9,7 +9,7 @@ services:
     volumes:
       - ./frontend/react-app:/app
     ports:
-      - '8000:8000'
+      - '8025:8025'
 
   backend-dev:
     container_name: backend-laravel
