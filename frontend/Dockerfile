@@ -7,7 +7,9 @@ RUN chmod +x /entrypoint.sh
 
 ADD ./frontend/react-app .
 
+
 RUN npm install -g npm@9.6.4
+RUN npm i -g vite
 RUN npm install
 
 ENTRYPOINT ["/entrypoint.sh"]
